@@ -126,11 +126,7 @@
       case 'End':  go(TOTAL - 1); break;
       case 'r': case 'R': go(0); break;
       default:
-        if (/^[1-9]$/.test(e.key)) {
-          go(parseInt(e.key, 10) - 1);
-        } else if (e.key === '0') {
-          go(9);
-        } else {
+        {
           handled = false;
         }
     }
