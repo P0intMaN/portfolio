@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pratheek Unni — Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Pratheek Unni — Software Engineer. Distributed systems, agentic SRE, platform engineering.">
+<meta property="og:title" content="Pratheek Unni — Portfolio">
+<meta property="og:description" content="Software Engineer building autonomous SRE, Kubernetes platforms, and distributed systems.">
+<meta name="theme-color" content="#0d0420">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-palette="galaga" data-scanlines="1" data-glow="1" data-march="1">
+
+<!-- ────── SPRITE LIBRARY (inline SVG) ────── -->
+<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">
+  <symbol id="invader-crab" viewBox="0 0 11 8">
+    <g fill="currentColor" shape-rendering="crispEdges">
+      <rect x="2" y="0" width="1" height="1"/><rect x="8" y="0" width="1" height="1"/>
+      <rect x="3" y="1" width="1" height="1"/><rect x="7" y="1" width="1" height="1"/>
+      <rect x="2" y="2" width="7" height="1"/>
+      <rect x="1" y="3" width="2" height="1"/><rect x="4" y="3" width="3" height="1"/><rect x="8" y="3" width="2" height="1"/>
+      <rect x="0" y="4" width="11" height="1"/>
+      <rect x="0" y="5" width="1" height="1"/><rect x="2" y="5" width="7" height="1"/><rect x="10" y="5" width="1" height="1"/>
+      <rect x="0" y="6" width="1" height="1"/><rect x="2" y="6" width="1" height="1"/><rect x="8" y="6" width="1" height="1"/><rect x="10" y="6" width="1" height="1"/>
+      <rect x="3" y="7" width="2" height="1"/><rect x="6" y="7" width="2" height="1"/>
+    </g>
+  </symbol>
+  <symbol id="invader-squid" viewBox="0 0 8 8">
+    <g fill="currentColor" shape-rendering="crispEdges">
+      <rect x="3" y="0" width="2" height="1"/>
+      <rect x="2" y="1" width="4" height="1"/>
+      <rect x="1" y="2" width="6" height="1"/>
+      <rect x="0" y="3" width="2" height="1"/><rect x="3" y="3" width="2" height="1"/><rect x="6" y="3" width="2" height="1"/>
+      <rect x="0" y="4" width="8" height="1"/>
+      <rect x="2" y="5" width="1" height="1"/><rect x="5" y="5" width="1" height="1"/>
+      <rect x="1" y="6" width="1" height="1"/><rect x="3" y="6" width="2" height="1"/><rect x="6" y="6" width="1" height="1"/>
+      <rect x="0" y="7" width="1" height="1"/><rect x="2" y="7" width="1" height="1"/><rect x="5" y="7" width="1" height="1"/><rect x="7" y="7" width="1" height="1"/>
+    </g>
+  </symbol>
+  <symbol id="invader-octo" viewBox="0 0 12 8">
+    <g fill="currentColor" shape-rendering="crispEdges">
+      <rect x="2" y="0" width="8" height="1"/>
+      <rect x="1" y="1" width="10" height="1"/>
+      <rect x="0" y="2" width="12" height="1"/>
+      <rect x="0" y="3" width="3" height="1"/><rect x="5" y="3" width="2" height="1"/><rect x="9" y="3" width="3" height="1"/>
+      <rect x="0" y="4" width="12" height="1"/>
+      <rect x="3" y="5" width="2" height="1"/><rect x="7" y="5" width="2" height="1"/>
+      <rect x="2" y="6" width="2" height="1"/><rect x="5" y="6" width="2" height="1"/><rect x="8" y="6" width="2" height="1"/>
+      <rect x="0" y="7" width="2" height="1"/><rect x="10" y="7" width="2" height="1"/>
+    </g>
+  </symbol>
+  <symbol id="cannon" viewBox="0 0 13 8">
+    <g fill="currentColor" shape-rendering="crispEdges">
+      <rect x="6" y="0" width="1" height="1"/>
+      <rect x="5" y="1" width="3" height="1"/>
+      <rect x="5" y="2" width="3" height="1"/>
+      <rect x="1" y="3" width="11" height="1"/>
+      <rect x="0" y="4" width="13" height="4"/>
+    </g>
+  </symbol>
+  <symbol id="ufo" viewBox="0 0 16 7">
+    <g fill="currentColor" shape-rendering="crispEdges">
+      <rect x="5" y="0" width="6" height="1"/>
+      <rect x="3" y="1" width="10" height="1"/>
+      <rect x="2" y="2" width="12" height="1"/>
+      <rect x="0" y="3" width="2" height="1"/><rect x="3" y="3" width="2" height="1"/><rect x="6" y="3" width="2" height="1"/><rect x="9" y="3" width="2" height="1"/><rect x="12" y="3" width="2" height="1"/><rect x="14" y="3" width="2" height="1"/>
+      <rect x="0" y="4" width="16" height="1"/>
+      <rect x="1" y="5" width="3" height="1"/><rect x="6" y="5" width="4" height="1"/><rect x="12" y="5" width="3" height="1"/>
+      <rect x="2" y="6" width="2" height="1"/><rect x="12" y="6" width="2" height="1"/>
+    </g>
+  </symbol>
+  <symbol id="heart" viewBox="0 0 8 7">
+    <g fill="currentColor" shape-rendering="crispEdges">
+      <rect x="1" y="0" width="2" height="1"/><rect x="5" y="0" width="2" height="1"/>
+      <rect x="0" y="1" width="8" height="2"/>
+      <rect x="1" y="3" width="6" height="1"/>
+      <rect x="2" y="4" width="4" height="1"/>
+      <rect x="3" y="5" width="2" height="1"/>
+    </g>
+  </symbol>
+</svg>
+
+<!-- ────── CHROME (outside scaled canvas) ────── -->
+<div id="progress-bar" class="progress-bar" style="width:0%" role="progressbar" aria-label="Section progress"></div>
+
+<nav class="nav-dots" aria-label="Section navigation">
+  <button class="dot" data-index="0" title="Insert Coin"         aria-label="Go to section 1: Insert Coin"></button>
+  <button class="dot" data-index="1" title="Pilot Briefing"      aria-label="Go to section 2: Pilot Briefing"></button>
+  <button class="dot" data-index="2" title="Mission Log"         aria-label="Go to section 3: Mission Log"></button>
+  <button class="dot" data-index="3" title="Primary Objective"   aria-label="Go to section 4: Primary Objective"></button>
+  <button class="dot" data-index="4" title="Side Quest Liftwork" aria-label="Go to section 5: Side Quest Liftwork"></button>
+  <button class="dot" data-index="5" title="Side Quest Terminus" aria-label="Go to section 6: Side Quest Terminus"></button>
+  <button class="dot" data-index="6" title="Weapons Loadout"     aria-label="Go to section 7: Weapons Loadout"></button>
+  <button class="dot" data-index="7" title="Intel Files"         aria-label="Go to section 8: Intel Files"></button>
+  <button class="dot" data-index="8" title="Establish Comms"     aria-label="Go to section 9: Establish Comms"></button>
+  <button class="dot" data-index="9" title="Continue?"           aria-label="Go to section 10: Continue?"></button>
+</nav>
+
+<div class="palette-bar" aria-label="Color palette">
+  <button class="pal-btn" data-pal="phosphor" title="Phosphor green" aria-label="Phosphor palette"></button>
+  <button class="pal-btn" data-pal="amber"    title="Amber"          aria-label="Amber palette"></button>
+  <button class="pal-btn active" data-pal="galaga" title="Galaga blue" aria-label="Galaga palette"></button>
+</div>
+
+<div class="kbd-hint" id="kbd-hint" aria-label="Keyboard shortcuts">
+  <span class="hint-item"><span class="key">→</span> next</span>
+  <span class="hint-item"><span class="key">←</span> prev</span>
+  <span class="hint-item"><span class="key">1–9</span> jump</span>
+</div>
+
+<!-- ────── SCALED CANVAS ────── -->
+<div id="canvas" role="main">
+
+  <!-- ╭─ S1: INSERT COIN ─╮ -->
+  <section class="slide" data-index="0" aria-label="Insert Coin — Hero">
+    <div class="hud">
+      <span class="phosphor">1UP &nbsp;<span class="yellow" id="score">0010</span></span>
+      <span class="dim">HIGH SCORE &nbsp;<span class="phosphor">9999</span></span>
+      <span class="magenta">CREDIT &nbsp;01</span>
+    </div>
+
+    <div class="frame s-title" style="justify-content:center;padding-top:0;padding-bottom:0;">
+      <div class="role glow-soft">PILOT · SOFTWARE ENGINEER · STARDATE 2019—∞</div>
+      <div class="title-xl name glow">PRATHEEK<br>UNNI</div>
+      <div class="tag">
+        Engineering distributed armadas across <span class="phosphor">Kubernetes</span>,
+        event-driven swarms, and <span class="magenta">agentic frontiers</span>.
+      </div>
+      <div class="invader-row march" aria-hidden="true">
+        <span class="sprite y"><svg><use href="#invader-squid"/></svg></span>
+        <span class="sprite"><svg><use href="#invader-crab"/></svg></span>
+        <span class="sprite m"><svg><use href="#invader-octo"/></svg></span>
+        <span class="sprite"><svg><use href="#invader-crab"/></svg></span>
+        <span class="sprite y"><svg><use href="#invader-squid"/></svg></span>
+      </div>
+      <button id="press-start" class="btn-cta blink" style="margin-top:24px;" aria-label="Start — go to about me">
+        ▸ PRESS START
+      </button>
+    </div>
+
+    <div class="hud-bottom">
+      <span class="credit">© P0INTMAN · <span data-cfg="year">2026</span></span>
+      <span class="js-stage">STAGE 01 / 10 — INSERT COIN</span>
+      <span style="display:inline-flex;gap:8px;align-items:center;">
+        <span class="dim">LIVES</span>
+        <span class="sprite phosphor" style="width:24px;height:21px;" aria-hidden="true"><svg><use href="#heart"/></svg></span>
+        <span class="sprite phosphor" style="width:24px;height:21px;" aria-hidden="true"><svg><use href="#heart"/></svg></span>
+        <span class="sprite phosphor" style="width:24px;height:21px;" aria-hidden="true"><svg><use href="#heart"/></svg></span>
+      </span>
+    </div>
+  </section>
+
+  <!-- ╭─ S2: PILOT BRIEFING ─╮ -->
+  <section class="slide" data-index="1" aria-label="Pilot Briefing — About">
+    <div class="hud">
+      <span class="phosphor">1UP &nbsp;<span class="yellow">0020</span></span>
+      <span class="dim">STAGE 02 / 10</span>
+      <span class="magenta">PILOT BRIEFING</span>
+    </div>
+
+    <div class="frame">
+      <div class="slide-title-bar">
+        <span class="num">02</span>
+        <h1>PILOT BRIEFING</h1>
+        <span class="underline"></span>
+      </div>
+
+      <div class="s-pilot">
+        <div>
+          <div class="avatar-frame">
+            <img src="https://avatars.githubusercontent.com/u/58041745?v=4"
+                 alt="Pratheek Unni — pilot portrait"
+                 loading="eager"
+                 crossorigin="anonymous">
+          </div>
+        </div>
+
+        <div>
+          <div class="eyebrow">CALLSIGN · P0INTMAN</div>
+          <div class="title-md glow" style="margin-top:18px;">SOFTWARE<br>ENGINEER</div>
+          <p class="body-lg" style="margin-top:36px;max-width:980px;">
+            Shipping software since <span class="phosphor">2019</span>. Currently piloting
+            <span class="magenta">Uptime Track</span> at Whatfix — an autonomous SRE
+            that diagnoses incidents while the rest of the fleet sleeps.
+          </p>
+          <p class="body-lg" style="margin-top:18px;max-width:980px;">
+            Prior life: <span class="phosphor">platform engineering</span>. Built the
+            launchpads other engineers deploy from. Comfortable in the dark margins
+            where Kubernetes meets Java meets Python.
+          </p>
+
+          <div class="stat-row">
+            <div class="stat"><div class="k">YRS IN ORBIT</div><div class="v" data-cfg="yrsInOrbit">04</div></div>
+            <div class="stat"><div class="k">PRIMARY WPN</div><div class="v" data-cfg="primaryWpn">PYTHON ; JAVA</div></div>
+            <div class="stat"><div class="k">CURRENT FLEET</div><div class="v" data-cfg="currentFleet">WHATFIX</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hud-bottom">
+      <span class="credit">© P0INTMAN</span>
+      <span class="js-stage">STAGE 02 / 10 — PILOT BRIEFING</span>
+      <span class="dim">▸ TURN PAGE TO CONTINUE</span>
+    </div>
+  </section>
+
+  <!-- ╭─ S3: MISSION LOG ─╮ -->
+  <section class="slide" data-index="2" aria-label="Mission Log — Work Experience">
+    <div class="hud">
+      <span class="phosphor">1UP &nbsp;<span class="yellow">0030</span></span>
+      <span class="dim">STAGE 03 / 10</span>
+      <span class="magenta">MISSION LOG</span>
+    </div>
+
+    <div class="frame">
+      <div class="slide-title-bar">
+        <span class="num">03</span>
+        <h1>MISSION LOG</h1>
+        <span class="underline"></span>
+      </div>
+      <div class="body-sm" style="margin-top:-32px;margin-bottom:8px;letter-spacing:0.08em;">
+        FLEET HQ · <span data-cfg="currentFleet">WHATFIX</span> · <span data-cfg="fleetSector">BENGALURU SECTOR</span>
+      </div>
+
+      <div class="s-mission">
+        <div class="stages">
+          <div class="stage-card">
+            <div class="stage-tag">STAGE 02 · ACTIVE</div>
+            <div class="role-line">
+              <h3>SOFTWARE ENGINEER II</h3>
+              <span class="dates">PRESENT</span>
+            </div>
+            <div class="meta">▸ Project Lead — Uptime Track</div>
+            <p class="desc">
+              Shipping an <span class="magenta">agentic SRE</span> that autonomously investigates
+              production incidents and returns a <span class="phosphor">descriptive RCA</span> with
+              concrete next steps. Less paging humans at 3 AM. More sleep for everyone.
+            </p>
+          </div>
+
+          <div class="stage-card">
+            <div class="stage-tag">STAGE 01 · CLEARED</div>
+            <div class="role-line">
+              <h3>SOFTWARE ENGINEER I</h3>
+              <span class="dates">PRIOR</span>
+            </div>
+            <div class="meta">▸ Platform Engineering</div>
+            <p class="desc">
+              Built abstraction frameworks so developers could ship to
+              <span class="phosphor">Kubernetes</span> without learning Kubernetes.
+              Scaled services across the platform layer and kept the deployment lanes
+              clear at peak traffic.
+            </p>
+          </div>
+        </div>
+
+        <div style="margin-top:36px;display:flex;gap:36px;align-items:center;justify-content:center;">
+          <span class="sprite phosphor" style="width:80px;height:64px;" aria-hidden="true"><svg><use href="#invader-crab"/></svg></span>
+          <span class="label">2019 ─────────── PRESENT</span>
+          <span class="sprite magenta" style="width:80px;height:64px;" aria-hidden="true"><svg><use href="#invader-octo"/></svg></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hud-bottom">
+      <span class="credit">© P0INTMAN</span>
+      <span class="js-stage">STAGE 03 / 10 — MISSION LOG</span>
+      <span class="dim">CAREER · <span data-cfg="careerYrs">4</span> YRS</span>
+    </div>
+  </section>
+
+  <!-- ╭─ S4: PRIMARY OBJECTIVE ─╮ -->
+  <section class="slide" data-index="3" aria-label="Primary Objective — Uptime Track">
+    <div class="hud">
+      <span class="phosphor">1UP &nbsp;<span class="yellow">0040</span></span>
+      <span class="dim">STAGE 04 / 10</span>
+      <span class="magenta">PRIMARY OBJECTIVE</span>
+    </div>
+
+    <div class="frame">
+      <div class="slide-title-bar">
+        <span class="num">04</span>
+        <h1>PRIMARY OBJECTIVE</h1>
+        <span class="underline"></span>
+      </div>
+
+      <div class="s-objective">
+        <div class="obj-left">
+          <div class="eyebrow">▸ ACTIVE MISSION</div>
+          <div class="name" style="margin-top:18px;">
+            UPTIME<br>TRACK<span class="sub">AGENTIC SRE — AUTONOMOUS RCA</span>
+          </div>
+          <p class="pitch">
+            An autonomous agent that watches your production fleet, smells smoke
+            before the alerts fire, and ships a <span class="phosphor">human-readable RCA</span>
+            with the next-three-steps already drafted.
+          </p>
+          <div class="pipeline">
+            <span class="step">INVESTIGATE</span>
+            <span class="arrow">▸</span>
+            <span class="step">CORRELATE</span>
+            <span class="arrow">▸</span>
+            <span class="step">DIAGNOSE</span>
+            <span class="arrow">▸</span>
+            <span class="step">REPORT</span>
+          </div>
+        </div>
+
+        <div class="terminal" aria-label="Sample Uptime Track output" role="log">
+          <span class="tline"><span class="tprompt">uptime-track ▸</span> incident detected</span>
+          <span class="tline tdim">  cluster=prod-eu-west · service=billing-api</span>
+          <span class="tline tdim">  signal: p99 latency 4.2s ↑ (baseline 180ms)</span>
+          <span class="tline">&nbsp;</span>
+          <span class="tline"><span class="tprompt">▸</span> correlating 12 telemetry streams …</span>
+          <span class="tline"><span class="tprompt">▸</span> hypothesis space ↦ 4 candidates</span>
+          <span class="tline">&nbsp;</span>
+          <span class="tline twarn">▸ ROOT CAUSE (87%)</span>
+          <span class="tline tinfo">  redis pool exhaustion after deploy</span>
+          <span class="tline tinfo">  PR #2914 reduced pool size 200 → 50</span>
+          <span class="tline">&nbsp;</span>
+          <span class="tline twarn">▸ NEXT STEPS</span>
+          <span class="tline tinfo">  1. revert PR #2914</span>
+          <span class="tline tinfo">  2. raise pool to 250 in staging</span>
+          <span class="tline tinfo">  3. add pool-saturation SLO</span>
+          <span class="tline">&nbsp;</span>
+          <span class="tline tdim">  generated in 4.7s · agent v0.9.2</span>
+          <span class="tline blink"><span class="tprompt">▸</span> _</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hud-bottom">
+      <span class="credit">© P0INTMAN</span>
+      <span class="js-stage">STAGE 04 / 10 — PRIMARY OBJECTIVE</span>
+      <span class="dim">PROJECT LEAD · WHATFIX</span>
+    </div>
+  </section>
+
+  <!-- ╭─ S5: SIDE QUEST — LIFTWORK ─╮ -->
+  <section class="slide" data-index="4" aria-label="Side Quest — Liftwork">
+    <div class="hud">
+      <span class="phosphor">1UP &nbsp;<span class="yellow">0050</span></span>
+      <span class="dim">STAGE 05 / 10</span>
+      <span class="magenta">SIDE QUEST · 01</span>
+    </div>
+
+    <div class="frame">
+      <div class="slide-title-bar">
+        <span class="num">05</span>
+        <h1>SIDE QUEST · LIFTWORK</h1>
+        <span class="underline"></span>
+      </div>
+
+      <div class="s-quest">
+        <div class="lead">
+          <div class="codename">▸ CODENAME — LIFTWORK</div>
+          <p class="tagline">
+            Plug-and-play, fully-automated build &amp; deploy platform for Kubernetes.
+            <span class="phosphor">Self-hosted internal Heroku</span> — <span class="magenta">git push</span>,
+            it ships.
+          </p>
+          <p class="quip">▸ Configurable. Flavoured. Not opinionated to the point of useless.</p>
+        </div>
+
+        <div>
+          <div class="arcade-cab">
+            <div class="cab-header">
+              <span>▸ MISSION CARD</span>
+              <span class="magenta blink-slow">● LIVE</span>
+            </div>
+            <div class="stat-grid">
+              <div class="stat-cell">
+                <div class="k">CLASS</div>
+                <div class="v">PaaS · K8S</div>
+              </div>
+              <div class="stat-cell">
+                <div class="k">PILOT MODE</div>
+                <div class="v">SELF-HOSTED</div>
+              </div>
+              <div class="stat-cell span2">
+                <div class="k">WEAPONS LOADED</div>
+                <div class="v phosphor">PYTHON · HELM · TYPESCRIPT</div>
+              </div>
+              <div class="stat-cell span2">
+                <div class="k">REPO</div>
+                <div class="v">
+                  <a href="https://github.com/P0intMaN/liftwork" target="_blank" rel="noopener noreferrer">
+                    github.com/P0intMaN/liftwork
+                  </a>
+                </div>
+              </div>
+              <div class="stat-cell span2">
+                <div class="k">LIVE BASE</div>
+                <div class="v">
+                  <a href="https://p0intman.github.io/liftwork" target="_blank" rel="noopener noreferrer">
+                    p0intman.github.io/liftwork
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:24px;display:flex;gap:24px;align-items:center;justify-content:flex-end;">
+            <span class="sprite magenta" style="width:64px;height:48px;" aria-hidden="true"><svg><use href="#cannon"/></svg></span>
+            <span class="label dim">SHIPS RUNNING</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hud-bottom">
+      <span class="credit">© P0INTMAN</span>
+      <span class="js-stage">STAGE 05 / 10 — SIDE QUEST · LIFTWORK</span>
+      <span class="dim">PUSH ▸ DEPLOY</span>
+    </div>
+  </section>
+
+  <!-- ╭─ S6: SIDE QUEST — TERMINUS ─╮ -->
+  <section class="slide" data-index="5" aria-label="Side Quest — Terminus">
+    <div class="hud">
+      <span class="phosphor">1UP &nbsp;<span class="yellow">0060</span></span>
+      <span class="dim">STAGE 06 / 10</span>
+      <span class="magenta">SIDE QUEST · 02</span>
+    </div>
+
+    <div class="frame">
+      <div class="slide-title-bar">
+        <span class="num">06</span>
+        <h1>SIDE QUEST · TERMINUS</h1>
+        <span class="underline"></span>
+      </div>
+
+      <div class="s-quest">
+        <div class="lead">
+          <div class="codename">▸ CODENAME — TERMINUS</div>
+          <p class="tagline">
+            Build rich terminal UIs in Java. Components, declarative layout,
+            <span class="phosphor">60 fps rendering</span>. For the green-on-black
+            diehards who refuse to leave the shell.
+          </p>
+          <p class="quip">▸ The text mode strikes back.</p>
+        </div>
+
+        <div>
+          <div class="arcade-cab">
+            <div class="cab-header">
+              <span>▸ MISSION CARD</span>
+              <span class="magenta blink-slow">● LIVE</span>
+            </div>
+            <div class="stat-grid">
+              <div class="stat-cell">
+                <div class="k">CLASS</div>
+                <div class="v">TUI · LIB</div>
+              </div>
+              <div class="stat-cell">
+                <div class="k">FRAMERATE</div>
+                <div class="v phosphor">60 FPS</div>
+              </div>
+              <div class="stat-cell span2">
+                <div class="k">WEAPON LOADED</div>
+                <div class="v phosphor">JAVA</div>
+              </div>
+              <div class="stat-cell span2">
+                <div class="k">REPO</div>
+                <div class="v">
+                  <a href="https://github.com/P0intMaN/terminus" target="_blank" rel="noopener noreferrer">
+                    github.com/P0intMaN/terminus
+                  </a>
+                </div>
+              </div>
+              <div class="stat-cell span2">
+                <div class="k">LIVE BASE</div>
+                <div class="v">
+                  <a href="https://p0intman.github.io/terminus" target="_blank" rel="noopener noreferrer">
+                    p0intman.github.io/terminus
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:24px;display:flex;gap:24px;align-items:center;justify-content:flex-end;">
+            <span class="sprite phosphor" style="width:80px;height:64px;" aria-hidden="true"><svg><use href="#invader-squid"/></svg></span>
+            <span class="label dim">DRAWS PER SECOND · 60</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hud-bottom">
+      <span class="credit">© P0INTMAN</span>
+      <span class="js-stage">STAGE 06 / 10 — SIDE QUEST · TERMINUS</span>
+      <span class="dim">JAVA · TUI</span>
+    </div>
+  </section>
+
+  <!-- ╭─ S7: WEAPONS LOADOUT ─╮ -->
+  <section class="slide" data-index="6" aria-label="Weapons Loadout — Skills">
+    <div class="hud">
+      <span class="phosphor">1UP &nbsp;<span class="yellow">0070</span></span>
+      <span class="dim">STAGE 07 / 10</span>
+      <span class="magenta">WEAPONS LOADOUT</span>
+    </div>
+
+    <div class="frame s-loadout">
+      <div class="slide-title-bar">
+        <span class="num">07</span>
+        <h1>WEAPONS LOADOUT</h1>
+        <span class="underline"></span>
+      </div>
+      <div class="body-sm" style="margin-top:-32px;letter-spacing:0.08em;">
+        ARMORY · SLOTS 01–08 · STATUS <span class="phosphor">EQUIPPED</span>
+      </div>
+
+      <div class="grid">
+        <div class="loadout-cell">
+          <div class="slot">SLOT 01</div>
+          <div class="name">PYTHON</div>
+          <div class="ammo">▸ ammo: ∞</div>
+        </div>
+        <div class="loadout-cell">
+          <div class="slot">SLOT 02</div>
+          <div class="name">JAVA</div>
+          <div class="ammo">▸ ammo: ∞</div>
+        </div>
+        <div class="loadout-cell">
+          <div class="slot">SLOT 03</div>
+          <div class="name">SPRING<br>BOOT</div>
+          <div class="ammo">▸ damage: high</div>
+        </div>
+        <div class="loadout-cell">
+          <div class="slot">SLOT 04</div>
+          <div class="name">AGENTIC<br>SYSTEMS</div>
+          <div class="ammo">▸ class: autonomous</div>
+        </div>
+        <div class="loadout-cell">
+          <div class="slot">SLOT 05</div>
+          <div class="name">BACKEND<br>SYSTEMS</div>
+          <div class="ammo">▸ scale: distributed</div>
+        </div>
+        <div class="loadout-cell">
+          <div class="slot">SLOT 06</div>
+          <div class="name">KUBER<br>NETES</div>
+          <div class="ammo">▸ orbit: pod / svc / ingress</div>
+        </div>
+        <div class="loadout-cell">
+          <div class="slot">SLOT 07</div>
+          <div class="name">DOCKER</div>
+          <div class="ammo">▸ payload: containerized</div>
+        </div>
+        <div class="loadout-cell">
+          <div class="slot">SLOT 08</div>
+          <div class="name">JENKINS<br>CI / CD</div>
+          <div class="ammo">▸ rate: per-commit</div>
+        </div>
+      </div>
+
+      <div style="margin-top:36px;display:flex;justify-content:space-between;align-items:center;">
+        <div class="label dim">▸ ALSO ABOARD: helm · grpc · kafka · postgres · ai stacks</div>
+        <div style="display:flex;gap:18px;" aria-hidden="true">
+          <span class="sprite phosphor" style="width:56px;height:42px;"><svg><use href="#cannon"/></svg></span>
+          <span class="sprite magenta" style="width:64px;height:48px;"><svg><use href="#invader-crab"/></svg></span>
+          <span class="sprite yellow" style="width:96px;height:42px;"><svg><use href="#ufo"/></svg></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hud-bottom">
+      <span class="credit">© P0INTMAN</span>
+      <span class="js-stage">STAGE 07 / 10 — WEAPONS LOADOUT</span>
+      <span class="dim">8 / 8 EQUIPPED</span>
+    </div>
+  </section>
+
+  <!-- ╭─ S8: INTEL FILES ─╮ -->
+  <section class="slide" data-index="7" aria-label="Intel Files — Writing">
+    <div class="hud">
+      <span class="phosphor">1UP &nbsp;<span class="yellow">0080</span></span>
+      <span class="dim">STAGE 08 / 10</span>
+      <span class="magenta">INTEL FILES</span>
+    </div>
+
+    <div class="frame">
+      <div class="slide-title-bar">
+        <span class="num">08</span>
+        <h1>INTEL FILES</h1>
+        <span class="underline"></span>
+      </div>
+      <div class="body-sm" style="margin-top:-32px;letter-spacing:0.08em;">
+        FIELD NOTES · LONG-FORM · DECLASSIFIED
+      </div>
+
+      <div class="intel-card">
+        <h3 class="glow">WE ARE GODS.</h3>
+        <p class="sub">
+          A piece of long-form writing on building, agency, and the moments
+          where engineers stop being users of the universe and start being authors of it.
+        </p>
+        <div class="url">
+          <a href="https://p0intman.github.io/wearegods" target="_blank" rel="noopener noreferrer">
+            ▸ p0intman.github.io/wearegods
+          </a>
+        </div>
+      </div>
+
+      <div style="margin-top:36px;display:flex;align-items:center;justify-content:space-between;">
+        <div class="label dim">▸ MORE TRANSMISSIONS QUEUED</div>
+        <span class="sprite phosphor" style="width:128px;height:56px;" aria-hidden="true"><svg><use href="#ufo"/></svg></span>
+      </div>
+    </div>
+
+    <div class="hud-bottom">
+      <span class="credit">© P0INTMAN</span>
+      <span class="js-stage">STAGE 08 / 10 — INTEL FILES</span>
+      <span class="dim">▸ READ AT BASE</span>
+    </div>
+  </section>
+
+  <!-- ╭─ S9: ESTABLISH COMMS ─╮ -->
+  <section class="slide" data-index="8" aria-label="Establish Comms — Contact">
+    <div class="hud">
+      <span class="phosphor">1UP &nbsp;<span class="yellow">0090</span></span>
+      <span class="dim">STAGE 09 / 10</span>
+      <span class="magenta">ESTABLISH COMMS</span>
+    </div>
+
+    <div class="frame">
+      <div class="slide-title-bar">
+        <span class="num">09</span>
+        <h1>ESTABLISH COMMS</h1>
+        <span class="underline"></span>
+      </div>
+      <div class="body-sm" style="margin-top:-32px;letter-spacing:0.08em;">
+        ▸ FREQUENCIES OPEN · TRANSMIT WHEN READY
+      </div>
+
+      <div class="comms-grid">
+        <a class="comms-card"
+           href="https://github.com/P0intMaN"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="GitHub profile">
+          <div class="glyph">{ }</div>
+          <div>
+            <div class="channel">CHANNEL · GITHUB</div>
+            <div class="handle">github.com/P0intMaN</div>
+          </div>
+        </a>
+        <a class="comms-card"
+           href="https://linkedin.com/in/pratheek-unni"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="LinkedIn profile">
+          <div class="glyph">in</div>
+          <div>
+            <div class="channel">CHANNEL · LINKEDIN</div>
+            <div class="handle">linkedin.com/in/pratheek-unni</div>
+          </div>
+        </a>
+        <a class="comms-card"
+           href="https://p0intman.github.io/wearegods"
+           target="_blank" rel="noopener noreferrer"
+           style="grid-column:span 2"
+           aria-label="Long-form writing">
+          <div class="glyph">▸</div>
+          <div>
+            <div class="channel">CHANNEL · LONG-FORM</div>
+            <div class="handle">p0intman.github.io/wearegods</div>
+          </div>
+        </a>
+      </div>
+
+      <div style="margin-top:36px;display:flex;gap:36px;align-items:center;justify-content:center;" aria-hidden="true">
+        <span class="sprite phosphor" style="width:80px;height:64px;"><svg><use href="#invader-squid"/></svg></span>
+        <span class="sprite magenta" style="width:80px;height:64px;"><svg><use href="#invader-crab"/></svg></span>
+        <span class="sprite yellow" style="width:96px;height:64px;"><svg><use href="#invader-octo"/></svg></span>
+        <span class="sprite phosphor" style="width:80px;height:64px;"><svg><use href="#cannon"/></svg></span>
+      </div>
+    </div>
+
+    <div class="hud-bottom">
+      <span class="credit">© P0INTMAN</span>
+      <span class="js-stage">STAGE 09 / 10 — ESTABLISH COMMS</span>
+      <span class="dim">SIGNAL · STRONG</span>
+    </div>
+  </section>
+
+  <!-- ╭─ S10: GAME OVER! ─╮ -->
+  <section class="slide" data-index="9" aria-label="Game Over">
+    <div class="hud">
+      <span class="phosphor">1UP &nbsp;<span class="yellow">0100</span></span>
+      <span class="dim">STAGE 10 / 10</span>
+      <span class="magenta">GAME OVER!</span>
+    </div>
+
+    <div class="frame s-continue" style="justify-content:center;">
+      <div class="eyebrow">▸ END OF DEMO REEL</div>
+      <div class="title-xl q glow">GAME OVER!</div>
+      <div class="countdown blink-slow" id="countdown" aria-live="polite" aria-label="Countdown">10</div>
+      <button id="contact-cta" class="btn-cta blink" aria-label="Return to start">
+        ▸ SENDING YOU BACK TO BASE ◂
+      </button>
+      <div class="sig">— PRATHEEK UNNI · P0INTMAN · 2026 —</div>
+
+    </div>
+
+    <div class="hud-bottom">
+      <span class="credit">© P0INTMAN · <span data-cfg="year">2026</span></span>
+      <span class="js-stage">STAGE 10 / 10 — GAME OVER!</span>
+      <span class="dim blink-slow">RETURNING TO BASE…</span>
+    </div>
+  </section>
+
+</div><!-- /#canvas -->
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
